@@ -6,3 +6,4 @@ elevenlabs==1.2.2
 uvicorn
 python-dotenv
 fastapi
+groq
