@@ -49,9 +49,8 @@ def run_simulation_cycle():
         agent_audio_path = generate_agent_audio(full_script_text)
         
         #2 : call analysis layer
-        #dummy audio but using text for now 
+        #dummy audio
 
-        #transcript = transcribe_audio(agent_audio_path, "audio/farmer_response.mp3")
         transcript = transcribe_audio(agent_audio_path, "example.mp3")
         analysis_result = analyze_conversation(transcript)
         
