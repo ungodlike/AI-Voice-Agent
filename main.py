@@ -50,7 +50,9 @@ def run_simulation_cycle():
         
         #2 : call analysis layer
         #dummy audio but using text for now 
-        transcript = transcribe_audio(agent_audio_path, "audio/farmer_response.mp3")
+
+        #transcript = transcribe_audio(agent_audio_path, "audio/farmer_response.mp3")
+        transcript = transcribe_audio(agent_audio_path, "example.mp3")
         analysis_result = analyze_conversation(transcript)
         
         #print analysis result using model_dump_json for proper JSON formatting
