@@ -7,9 +7,9 @@ An AI voice agent that can call users and reinforce the call script based on ana
 ## Features
 
 
-1. The simulation cycle runs a general audio script. The user response is currently mock texts but would use whisper tts (or 11labs) for speech to text.
+1. The simulation cycle runs a general audio script. The user response is currently mock texts but would use whisper tts (or 11labs) for speech to text. The ElevenLabs audio is saved in an audio folder created in the codebase.
 
-2. The user output is analyzed based on pre-given sentiments (found in analysis.py) and a new audio script is generated comparing the sentiments to the initial script (config.py). 
+2. The user response (here, text) is analyzed based on pre-given sentiments (found in analysis.py) and a new audio script is generated comparing the sentiments to the initial script (config.py). 
 
 3. Final output has a new script along with the sentiment analysis results. The new script is stored in current_script.json and is called the next time. 
 
